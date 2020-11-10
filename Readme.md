@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Assel](https://up.htmlacademy.ru/adaptive/21/user/1422079).
-* Наставник: `Неизвестно`.
+*  Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
