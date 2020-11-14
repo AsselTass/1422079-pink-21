@@ -5,8 +5,149 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <div class="container">
+      <header class="main-header">
+        <nav class="site-nav">
+          <div class="site-nav__wrapper">
+            <a class="site-nav__logo">
+              <img alt="Логотип" src="https://via.placeholder.com/150x150">
+            </a>
+            <ul class="list-style-reset site-nav__list">
+              <li class="site-nav__item">
+                <a href="index.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="photo.html">ФОТОГРАФИИ</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="form.html">КОНКУРС</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+              </li>
+            </ul>
+            <button class="site-nav__toggle" type="button"><img class="site-nav__icon" src="https://via.placeholder.com/150x150"><span class="visually-hidden"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="main-slogan__wrapper">
+          <section class="applications">
+            <div class="applications__wrapper">
+              <h1 class="main-slogan">Взгляните на жизнь иначе!</h1>
+              <section class="applications-icon__wrapper">
+                <a class="applications__link" href="http://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
+                <a class="applications-icon__apple" href="http://www.apple.com/itunes/working-itunes/market/">
+                  <svg width="47" height="56"></svg></a>
+                <a class="applications-icon__android" href="http://androidmarkets.ru">
+                  <svg width="43" height="47"></svg>
+                </a>
+                <a class="applications-icon__microsoft" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
+                  <svg width="44" height="41"></svg>
+                </a>
+                <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </section>
+            </div>
+          </section>
+        </div>
+      </header>
+    </div>
+    <main>
+      <section class="description">
+        <div class="description__wrapper">
+          <span class="description__head">
+            Устали от серости? Нам есть что вам предложить!
+          </span>
+          <div class="description__wrapper">
+            <div class="description-list__wrapper">
+              <ul class="description-list">
+                <li class="description__item">
+                  <blockquote>
+                    <cite class="description__item-head">Поднимает настроение</cite>
+                    <p class= "description__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                  </blockquote>
+                </li>
+                <li class="description__item">
+                  <blockquote>
+                    <cite class="description__item-head">Меняет мир вокруг</cite>
+                    <p class= "description__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                  </blockquote>
+                </li>
+                <li class="description__item">
+                  <blockquote>
+                    <cite class="description__item-head">Заводит новых друзей</cite>
+                    <p class= "description__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+            <div class="description-photo__wrapper">
+              <img class="description-photo" src="https://via.placeholder.com/150x150">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <ul class="reviews-list">
+            <li class="reviews-list__item">
+              <span>Николай Петров</span>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="subscription-plan">
+        <div class="subscription-plan__wrapper">
+           <ul class="subscription-plan__item">
+             <span>Стандарт</span>
+             <span>3,99$</span>
+             <li>Розовый фильтр</li>
+             <li>Смайлики</li>
+             <li>Комментарии</li>
+           </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts-address">
+            <h2>Остались вопросы? Свяжитесь с нами! </h2>
+            <h3>Звоните:</h3>
+            <a href="tel:88124502525" class="contacts-tel">+7 (812) 555-66-66</a>
+            <h3>Звоните:</h3>
+            <a href="" class="contacts-email">mail@htmlacademy.ru</a>
+            <h3>Звоните:</h3>
+            <p>ул. Большая Конюшенная, 19/8</p>
+          </div>
+          <img class="map-image" src="https://via.placeholder.com/150x150">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h2 class="visually-hidden">Логотип академии</h2>
+        <a href="" target="_blank"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Давайте дружить!</h2>
+          <ul class="social-list">
+            <li>
+              <a class="twitter-icon" href="#" aria-label="Твиттер">
+              </a>
+            </li>
+            <li>
+              <a class="facebook-icon" href="#" aria-label="Фейсбук">
+              </a>
+            </li>
+            <li>
+              <a class="youtube-icon" href="#" aria-label="Ютуб">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a></p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
