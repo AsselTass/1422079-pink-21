@@ -5,14 +5,14 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <div class="container">
-      <header class="main-header">
+    <header class="main-header">
+      <div class="main-header__wrapper">
         <nav class="site-nav">
           <div class="site-nav__wrapper">
             <a class="site-nav__logo">
               <img alt="Логотип" src="https://via.placeholder.com/150x150">
             </a>
-            <ul class="list-style-reset site-nav__list">
+            <ul class="ite-nav__list">
               <li class="site-nav__item">
                 <a href="index.html">ГЛАВНАЯ</a>
               </li>
@@ -30,126 +30,145 @@
             </button>
           </div>
         </nav>
-        <div class="main-slogan__wrapper">
-          <section class="applications">
-            <div class="applications__wrapper">
-              <h1 class="main-slogan">Взгляните на жизнь иначе!</h1>
-              <section class="applications-icon__wrapper">
-                <h2>Скачать приложение</h2>
-                <a class="applications__link" href="http://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
-                <a class="applications-icon__apple" href="http://www.apple.com/itunes/working-itunes/market/">
-                  <svg width="47" height="56"></svg></a>
-                <a class="applications-icon__android" href="http://androidmarkets.ru">
-                  <svg width="43" height="47"></svg>
-                </a>
-                <a class="applications-icon__microsoft" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
-                  <svg width="44" height="41"></svg>
-                </a>
-                <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-              </section>
-            </div>
-          </section>
-        </div>
-      </header>
-    </div>
-    <main>
-      <section class="description">
-        <h2>Описание приложения</h2>
-        <div class="description__wrapper">
-          <span class="description__head">
-            Устали от серости? Нам есть что вам предложить!
-          </span>
-          <div class="description__wrapper">
-            <div class="description-list__wrapper">
-              <ul class="description-list">
-                <li class="description__item">
-                  <blockquote>
-                    <cite class="description__item-head">Поднимает настроение</cite>
-                    <p class= "description__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                  </blockquote>
-                </li>
-                <li class="description__item">
-                  <blockquote>
-                    <cite class="description__item-head">Меняет мир вокруг</cite>
-                    <p class= "description__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                  </blockquote>
-                </li>
-                <li class="description__item">
-                  <blockquote>
-                    <cite class="description__item-head">Заводит новых друзей</cite>
-                    <p class= "description__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                  </blockquote>
-                </li>
-              </ul>
-            </div>
-            <div class="description-photo__wrapper">
-              <img class="description-photo" src="https://via.placeholder.com/150x150" alt="Телефон со смайликом">
+        <section class="applications">
+          <div class="applications__wrapper">
+            <h2 class="applications__header">Взгляните на жизнь иначе!</h2>
+            <div class="applications__links">
+              <a class="applications__links--button" href="http://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
+              <a class="applications__links--apple" href="http://www.apple.com/itunes/working-itunes/market/">
+                <svg width="47" height="56"></svg></a>
+              <a class="applications__links--android" href="http://androidmarkets.ru">
+                <svg width="43" height="47"></svg>
+              </a>
+              <a class="applications__links--microsoft" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
+                <svg width="44" height="41"></svg>
+              </a>
+              <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
           </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="description">
+        <div class="description__wrapper">
+          <p class="description__header">
+            Устали от серости? Нам есть что вам предложить!
+          </p>
+          <ul class="description__list">
+            <li class="description__item">
+              <h3 class="description__item-header">Поднимает настроение</h3>
+              <p class= "description__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="description__item">
+              <h3 class="description__item-header">Меняет мир вокруг</h3>
+              <p class= "description__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="description__item">
+              <h3 class="description__item-header">Заводит новых друзей</h3>
+              <p class= "description__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
-        <h2>Отзывы</h2>
+        <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__wrapper">
-          <ul class="reviews-list">
-            <li class="reviews-list__item">
+          <div class="reviews__list">
+            <div class="reviews__item">
               <span>Николай Петров</span>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </li>
-          </ul>
+            </div>
+            <div class="reviews__item">
+              <span>Николай Петров</span>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+            <div class="reviews__item">
+              <span>Николай Петров</span>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="current" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
       <section class="subscription-plan">
         <h2 class="visually-hidden">План регистрации</h2>
         <div class="subscription-plan__wrapper">
-          <ul class="subscription-plan__item">
-            <h3>Стандарт</h3>
-            <h4>3,99$</h4>
-            <li>Розовый фильтр</li>
-            <li>Смайлики</li>
-            <li>Комментарии</li>
-          </ul>
+          <table>
+            <tr class="subscription-plan__list">
+              <td class="subscription-plan__item plan1">База</td>
+              <td class="subscription-plan__item plan2">Стандарт</td>
+              <td class="subscription-plan__item plan3">Анлим</td>
+            </tr>
+            <tr class="subscription-plan__property">
+              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
+              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
+              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
+            </tr>
+            <tr class="subscription-plan__property">
+              <td class="subscription-plan__property--smile non-included">Смайлики</td>
+              <td class="subscription-plan__property--smile included">Смайлики</td>
+              <td class="subscription-plan__property--smile included">Смайлики</td>
+            </tr>
+            <tr class="subscription-plan__property">
+              <td class="subscription-plan__property--comment non-included">Комментарии</td>
+              <td class="subscription-plan__property--comment non-included">Комментарии</td>
+              <td class="subscription-plan__property--comment included">Комментарии</td>
+            </tr>
+          </table>
+          <div class="slider-controls">
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
+          </div>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts-address">
-            <h2>Остались вопросы? Свяжитесь с нами! </h2>
-            <h3>Звоните:</h3>
-            <a href="tel:88124502525" class="contacts-tel">+7 (812) 555-66-66</a>
-            <h3>Звоните:</h3>
-            <a href="" class="contacts-email">mail@htmlacademy.ru</a>
-            <h3>Звоните:</h3>
-            <p>ул. Большая Конюшенная, 19/8</p>
-          </div>
-          <img class="map-image" src="https://via.placeholder.com/150x150" alt="Карта">
+          <p class="contacts__headline">Остались вопросы? Свяжитесь с нами! </p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+                <b>Звоните:</b>
+                <a href="tel:88125556666" class="contacts__link">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+                <b>Пишите:</b>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+            </li>
+            <li class="contacts__item">
+                <b>Приезжайте в гости:</b>
+                <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+            </li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russie%2C%20191186!5e0!3m2!1sfr!2sfr!4v1605550763730!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <h2 class="visually-hidden">Логотип академии</h2>
-        <a href="" target="_blank"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a>
+        <a><img alt="Логотип" src="https://via.placeholder.com/150x150"></a>
         <section class="footer-social">
-          <h2>Социальные сети</h2>
-          <h2 class="visually-hidden">Давайте дружить!</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li>
-              <a class="twitter-icon" href="#" aria-label="Твиттер">
+              <a class="social-list__item twitter-icon" href="#" aria-label="Твиттер">
               </a>
             </li>
             <li>
-              <a class="facebook-icon" href="#" aria-label="Фейсбук">
+              <a class="social-list__item facebook-icon" href="#" aria-label="Фейсбук">
               </a>
             </li>
             <li>
-              <a class="youtube-icon" href="#" aria-label="Ютуб">
-                <span class="visually-hidden">Ютуб</span>
+              <a class="social-list__item youtube-icon" href="#" aria-label="Ютуб">
               </a>
             </li>
           </ul>
           <div class="footer-copyright">
-            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a></p>
+            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a></p>
           </div>
         </section>
       </div>
