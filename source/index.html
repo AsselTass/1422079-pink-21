@@ -12,7 +12,7 @@
             <a class="site-nav__logo">
               <img alt="Логотип" src="https://via.placeholder.com/150x150">
             </a>
-            <ul class="ite-nav__list">
+            <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a href="index.html">ГЛАВНАЯ</a>
               </li>
@@ -30,21 +30,18 @@
             </button>
           </div>
         </nav>
+        <section class="header-slogan">
+          <div class="header-slogan__wrapper">
+            <h2 class="header-slogan__text">Взгляните на жизнь иначе!</h2>
+        </div>
+        </section>
         <section class="applications">
-          <div class="applications__wrapper">
-            <h2 class="applications__header">Взгляните на жизнь иначе!</h2>
-            <div class="applications__links">
-              <a class="applications__links--button" href="http://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
-              <a class="applications__links--apple" href="http://www.apple.com/itunes/working-itunes/market/">
-                <svg width="47" height="56"></svg></a>
-              <a class="applications__links--android" href="http://androidmarkets.ru">
-                <svg width="43" height="47"></svg>
-              </a>
-              <a class="applications__links--microsoft" href="http://www.microsoftstore.com/store/msru/ru_RU/home">
-                <svg width="44" height="41"></svg>
-              </a>
-              <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div>
+          <div class="applications__links">
+            <a class="applications__button" href="http://www.apple.com/itunes/working-itunes/market/">Скачать приложение</a>
+            <a class="applications__link applications__link--apple" href="http://www.apple.com/itunes/working-itunes/market/"><svg width="47" height="56"></svg></a>
+            <a class="applications__link applications__link--android" href="http://androidmarkets.ru"><svg width="43" height="47"></svg></a>
+            <a class="applications__link applications__link--microsoft" href="http://www.microsoftstore.com/store/msru/ru_RU/home"><svg width="44" height="41"></svg></a>
+            <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
         </section>
       </div>
@@ -76,15 +73,15 @@
         <div class="reviews__wrapper">
           <div class="reviews__list">
             <div class="reviews__item">
-              <span>Николай Петров</span>
+              <h3>Николай Петров</h3>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="reviews__item">
-              <span>Николай Петров</span>
+              <h3>Николай Петров</h3>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="reviews__item">
-              <span>Николай Петров</span>
+              <h3>Николай Петров</h3>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
@@ -100,24 +97,24 @@
         <div class="subscription-plan__wrapper">
           <table>
             <tr class="subscription-plan__list">
-              <td class="subscription-plan__item plan1">База</td>
-              <td class="subscription-plan__item plan2">Стандарт</td>
-              <td class="subscription-plan__item plan3">Анлим</td>
+              <td class="subscription-plan__item">База</td>
+              <td class="subscription-plan__item">Стандарт</td>
+              <td class="subscription-plan__item">Анлим</td>
             </tr>
-            <tr class="subscription-plan__property">
-              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
-              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
-              <td class="subscription-plan__property--pink included">Розовый фильтр</td>
+            <tr class="subscription-plan__properties">
+              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
             </tr>
-            <tr class="subscription-plan__property">
-              <td class="subscription-plan__property--smile non-included">Смайлики</td>
-              <td class="subscription-plan__property--smile included">Смайлики</td>
-              <td class="subscription-plan__property--smile included">Смайлики</td>
+            <tr class="subscription-plan__properties">
+              <td class="subscription-plan__property subscription-plan__property--non-included">Смайлики</td>
+              <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
+              <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
             </tr>
-            <tr class="subscription-plan__property">
-              <td class="subscription-plan__property--comment non-included">Комментарии</td>
-              <td class="subscription-plan__property--comment non-included">Комментарии</td>
-              <td class="subscription-plan__property--comment included">Комментарии</td>
+            <tr class="subscription-plan__properties">
+              <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
+              <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
+              <td class="subscription-plan__property subscription-plan__property--included">Комментарии</td>
             </tr>
           </table>
           <div class="slider-controls">
@@ -155,15 +152,15 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li>
-              <a class="social-list__item twitter-icon" href="#" aria-label="Твиттер">
+              <a class="social-list__item social-list__item--twitter-icon" href="#" aria-label="Твиттер">
               </a>
             </li>
             <li>
-              <a class="social-list__item facebook-icon" href="#" aria-label="Фейсбук">
+              <a class="social-list__item social-list__item--facebook-icon" href="#" aria-label="Фейсбук">
               </a>
             </li>
             <li>
-              <a class="social-list__item youtube-icon" href="#" aria-label="Ютуб">
+              <a class="social-list__item social-list__item--youtube-icon" href="#" aria-label="Ютуб">
               </a>
             </li>
           </ul>
