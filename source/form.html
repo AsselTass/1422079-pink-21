@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="site-nav">
+          <div class="site-nav__wrapper">
+            <a class="site-nav__logo">
+              <img alt="Логотип" src="https://via.placeholder.com/150x150">
+            </a>
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="index.html">ГЛАВНАЯ</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="photo.html">ФОТОГРАФИИ</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="form.html">КОНКУРС</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+              </li>
+            </ul>
+            <button class="site-nav__toggle" type="button"><img class="site-nav__icon" src="https://via.placeholder.com/150x150" alt="menu-toggle"><span class="visually-hidden"></span>
+            </button>
+          </div>
+        </nav>
+        <section class="header-slogan">
+          <div class="header-slogan__wrapper">
+            <h2 class="header-slogan__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="form">
+        <div class="form__wrapper">
+          <p class="form__header">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </p>
+          <form class="form__info" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__input">
+              <label for="form__user-surname">Фамилия</label>
+              <input class="form__field" id="form__user-surname" type="text" name="login" placeholder="Укажите фамилию*">
+              <label for="form__user-name">Имя</label>
+              <input class="form-field" id="form__user-name" type="text" placeholder="Введите ваше имя*">
+              <label for="form__user-secondname">Отчество</label>
+              <input class="form-field" id="form__user-secondname" type="text" placeholder="Ну и отчество тоже">
+            </div>
+            <div class="form__checkbox">
+              <p>Ваши безбашенные достижения в путешествии</p>
+              <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="photo-shark" id="shark-checkbox">
+              <label class="form__checkbox-text" for="shark-checkbox">Сделал селфи с акулой</label>
+              <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="plage" id="plage-checkbox">
+              <label class="form__checkbox-text" for="plage-checkbox">Обгорел на пляже</label>
+              <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="norris" id="norris-checkbox">
+              <label class="form__checkbox-text" for="norris-checkbox">Видел Чака Норриса</label>
+              <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="souvenir" id="souvenir-checkbox">
+              <label class="form__checkbox-text" for="souvenir-checkbox">Накупил сувениров</label>
+              <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="castle" id="castle-checkbox">
+              <label class="form__checkbox-text" for="castle-checkbox">Удержал башню</label>
+              <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="hotel" id="hotel-checkbox">
+              <label class="form__checkbox-text" for="hotel-checkbox">Разгромил отель</label>
+            </div>
+             <div class="form__input">
+              <label for="form__user-phone">номер телефона</label>
+              <input class="form__field" id="form__user-phone" type="number" placeholder="Номер, пожалуйста">
+              <label for="form__user-email">адрес почты</label>
+              <input class="form__field" id="form__user-email" type="email" placeholder="Введите почту *">
+            </div>
+            <div class="form__radio">
+              <h3>С каким приложением путешествовали?</h3>
+              <input class="radio-item" type="radio" name="ios" value="0" id="ios-radio">
+              <label class="form__radio-text" for="ios-radio">Pink для iOS</label>
+              <input class="form__radio-item" type="radio" name="android" value="0" id="android-radio">
+              <label class="form__radio-text" for="android-radio">Pink на Android</label>
+              <input class="form__radio-item" type="radio" name="windows" value="0" id="windows-radio">
+              <label class="form__radio-text" for="windows-radio">Windows Phone</label>
+            </div>
+            <div class="form__textarea">
+              <label for="form-text">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+              <textarea class="form__text-field" id="form-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+            <button class="form__request-button" type="submit" aria-label="Кнопка отправить">Отправить форму</button>
+            <span>-Обязательные поля</span>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a><img alt="Логотип" src="https://via.placeholder.com/150x150"></a>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social-list">
+            <li>
+              <a class="social-list__item social-list__item--twitter-icon" href="#" aria-label="Твиттер">
+              </a>
+            </li>
+            <li>
+              <a class="social-list__item social-list__item--facebook-icon" href="#" aria-label="Фейсбук">
+              </a>
+            </li>
+            <li>
+              <a class="social-list__item social-list__item--youtube-icon" href="#" aria-label="Ютуб">
+              </a>
+            </li>
+          </ul>
+          <div class="footer-copyright">
+            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a></p>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
