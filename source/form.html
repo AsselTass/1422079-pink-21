@@ -48,17 +48,17 @@
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__section">
               <fieldset class="form__section-wrapper">
-                <div class="form_row">
+                <div class="form__row">
                   <label class="form__textfield-label" for="user-surname">Фамилия</label>
-                  <input class="form__textfield" id="user-surname" type="text" name="login" placeholder="Укажите фамилию*">
+                  <input class="form__textfield" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
                 </div>
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-name">Имя</label>
-                  <input class="form__textfield" id="user-name" type="text" placeholder="Введите ваше имя*">
+                  <input class="form__textfield" id="user-name" type="text" name="name" placeholder="Введите ваше имя*" required>
                 </div>
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-patronymic">Отчество</label>
-                  <input class="form__textfield" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
+                  <input class="form__textfield" id="user-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </div>
               </fieldset>
             </div>
@@ -67,27 +67,27 @@
                 <legend class="form__section-title">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form__checklist checklist">
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="photo-shark" id="shark-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="photo-shark" id="shark-checkbox">
                     <label class="form__checkbox-label" for="shark-checkbox">Сделал селфи с акулой</label>
                   </li>
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="plage" id="plage-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="plage" id="plage-checkbox">
                     <label class="form__checkbox-label" for="plage-checkbox">Обгорел на пляже</label>
                   </li>
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="norris" id="norris-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="norris" id="norris-checkbox">
                     <label class="form__checkbox-label" for="norris-checkbox">Видел Чака Норриса</label>
                   </li>
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="souvenir" id="souvenir-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="souvenir" id="souvenir-checkbox">
                     <label class="form__checkbox-label" for="souvenir-checkbox">Накупил сувениров</label>
                   </li>
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--tick" type="checkbox" name="castle" id="castle-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="castle" id="castle-checkbox">
                     <label class="form__checkbox-label" for="castle-checkbox">Удержал башню</label>
                   </li>
                   <li class="checklist__item">
-                    <input class="form__checkbox-item form__checkbox-item--notick" type="checkbox" name="hotel" id="hotel-checkbox">
+                    <input class="form__checkbox-item" type="checkbox" name="hotel" id="hotel-checkbox">
                     <label class="form__checkbox-label" for="hotel-checkbox">Разгромил отель</label>
                   </li>
                 </ul>
@@ -95,13 +95,13 @@
             </div>
             <div class="form__section">
               <fieldset class="form__section-wrapper">
-                <div class="form_row">
-                  <label for="form__user-phone">номер телефона</label>
-                  <input class="form__field" id="form__user-phone" type="number" placeholder="Номер, пожалуйста">
+                <div class="form__row">
+                  <label class="form__textfield-label" for="form__user-phone">номер телефона</label>
+                  <input class="form__textfield" id="form__user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
                 </div>
-                <div class="form_row">
-                  <label for="form__user-email">адрес почты</label>
-                  <input class="form__field" id="form__user-email" type="email" placeholder="Введите почту *">
+                <div class="form__row">
+                  <label class="form__textfield-label" for="form__user-email">адрес почты</label>
+                  <input class="form__textfield" id="form__user-email" type="email" name="email" placeholder="Введите почту *" required>
                 </div>
               </fieldset>
             </div>
@@ -110,15 +110,15 @@
                 <legend class="form__section-title">С каким приложением путешествовали?</legend>
                 <ul class="form__radiolist radiolist">
                   <li class="radiolist__item">
-                    <input class="form__radio-item" type="radio" name="ios" value="0" id="ios-radio">
+                    <input class="form__radio-item" type="radio" name="platform" value="ios" id="ios-radio">
                     <label class="form__radio-text" for="ios-radio">Pink для iOS</label>
                   </li>
                   <li class="radiolist__item">
-                    <input class="form__radio-item" type="radio" name="android" value="0" id="android-radio">
+                    <input class="form__radio-item" type="radio" name="platform" value="android" id="android-radio">
                     <label class="form__radio-text" for="android-radio">Pink на Android</label>
                   </li>
                   <li class="radiolist__item">
-                    <input class="form__radio-item" type="radio" name="windows" value="0" id="windows-radio">
+                    <input class="form__radio-item" type="radio" name="platform" value="windows" id="windows-radio">
                     <label class="form__radio-text" for="windows-radio">Windows Phone</label>
                   </li>
                 </ul>
