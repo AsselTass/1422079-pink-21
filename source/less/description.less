@@ -1,0 +1,55 @@
+.margin-unset() {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.description__wrapper {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.description__header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  background: white;
+  padding: 46px 20px 70px;
+  .margin-unset();
+}
+
+.description__list {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  padding-bottom: 263px;
+  background: #f2f2f2;
+  .margin-unset();
+
+  &::after {
+    background-image: url("../img/mobile-smile-phone.png");
+    position: absolute;
+    height: 280px;
+    width: 157px;
+    content: "";
+    left: 50%;
+  }
+}
+
+.description__item-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  .margin-unset();
+}
+
+.description__item-header {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
