@@ -1,4 +1,8 @@
 // Начните писать стили здесь
+@import "global.less";
+@import "fonts.less";
+@import "variables.less";
+@import "margin-reset.less";
 @import "main-header.less";
 @import "site-nav.less";
 @import "header-slogan.less";
@@ -10,24 +14,6 @@
 @import "social-list.less";
 @import "page-footer.less";
 @import "subscription-plan.less";
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
+@import "footer-copyright";
+@import "description-header.less";
+@import "pagination.less";

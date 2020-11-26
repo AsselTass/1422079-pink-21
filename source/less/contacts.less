@@ -3,19 +3,16 @@
   flex-direction: column;
   padding: 49px;
   align-items: center;
-}
-
-.margin-unset() {
-  margin-top: 0;
-  margin-bottom: 0;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .contacts__headline {
+  .margin-unset();
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
   text-align: center;
-  .margin-unset();
   padding-bottom: 45px;
 }
 
@@ -30,21 +27,21 @@
   align-items: center;
   padding-bottom: 31px;
 
-  & b {
+  b {
     padding-bottom: 13px;
   }
 }
 
-.contacts__text {
-  color: #d22856;
+.contacts__text,
+.contacts__link {
+  .margin-unset();
+  color: @pinkyred;
   font-size: 24px;
   font-weight: 300;
   line-height: 33px;
   text-align: center;
-  .margin-unset();
 }
 
 .contacts__link {
-  &:extend(.contacts__text);
   text-decoration: none;
 }

@@ -10,26 +10,28 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <nav class="site-nav">
+        <nav class="site-nav  site-nav--closed">
           <div class="site-nav__wrapper">
-            <a class="site-nav__logo">
-              <img alt="Логотип" src="img/pink.svg">
-            </a>
-            <ul class="site-nav__list">
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-nav__item">
-                <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-            <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <div class="site-nav__content-wrapper">
+              <a class="site-nav__logo">
+                <img alt="Логотип" src="img/pink.svg">
+              </a>
+              <button class="site-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
         <section class="header-slogan">
@@ -69,11 +71,15 @@
       </div>
     </header>
     <main>
-      <section class="description">
-        <div class="description__wrapper">
-          <p class="description__header">
+      <div class="description-header">
+        <div class="description-header__wrapper">
+          <p class="description-header__text">
             Устали от серости? Нам есть что вам предложить!
           </p>
+        </div>
+      </div>
+      <section class="description">
+        <div class="description__wrapper">
           <ul class="description__list">
             <li class="description__item">
               <h3 class="description__item-header">Поднимает настроение</h3>
@@ -108,41 +114,43 @@
             </div>
           </div>
         </div>
-        <div class="slider-controls">
-          <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+        <div class="table-slider__controls pagination">
+          <button class="pagination__control pagination__control--current" type="button" aria-label="Show slide 1"></button>
+          <button class="pagination__control" type="button" aria-label="Show slide 2"></button>
+          <button class="pagination__control" type="button" aria-label="Show slide 2"></button>
         </div>
       </section>
       <section class="subscription-plan">
         <h2 class="visually-hidden">План регистрации</h2>
         <div class="subscription-plan__wrapper">
-          <table class="subscription-plan__table">
-            <tr class="subscription-plan__list">
-              <td class="subscription-plan__item">База</td>
-              <td class="subscription-plan__item">Стандарт</td>
-              <td class="subscription-plan__item">Анлим</td>
-            </tr>
-            <tr class="subscription-plan__properties">
-              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
-              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
-              <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
-            </tr>
-            <tr class="subscription-plan__properties">
-              <td class="subscription-plan__property subscription-plan__property--non-included">Смайлики</td>
-              <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
-              <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
-            </tr>
-            <tr class="subscription-plan__properties">
-              <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
-              <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
-              <td class="subscription-plan__property subscription-plan__property--included">Комментарии</td>
-            </tr>
-          </table>
-          <div class="slider-controls">
-            <button class="current" type="button" aria-label="Первый слайд"></button>
-            <button type="button" aria-label="Второй слайд"></button>
-            <button type="button" aria-label="Третий слайд"></button>
+          <div class="subscription-plan__slider table-slider table-slider--visible-slide-2">
+            <table class="subscription-plan__table">
+              <tr class="subscription-plan__list">
+                <th class="subscription-plan__item">База</th>
+                <th class="subscription-plan__item">Стандарт</th>
+                <th class="subscription-plan__item">Анлим</th>
+              </tr>
+              <tr class="subscription-plan__properties">
+                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+              </tr>
+              <tr class="subscription-plan__properties">
+                <td class="subscription-plan__property subscription-plan__property--non-included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
+              </tr>
+              <tr class="subscription-plan__properties">
+                <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--included">Комментарии</td>
+              </tr>
+            </table>
+            <div class="table-slider__controls pagination">
+              <button class="pagination__control" type="button" aria-label="Show slide 1"></button>
+              <button class="pagination__control pagination__control--current" type="button" aria-label="Show slide 2"></button>
+              <button class="pagination__control" type="button" aria-label="Show slide 2"></button>
+            </div>
           </div>
         </div>
       </section>
@@ -160,7 +168,7 @@
             </li>
             <li class="contacts__item">
               <b>Приезжайте в гости:</b>
-              <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__text">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
         </div>
