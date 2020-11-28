@@ -10,3 +10,104 @@
   background-size: 320px auto;
   margin: 0 auto;
 }
+
+.main-header__logo {
+  background: @lightblack;
+}
+
+.main-header__logo-wrapper {
+  max-width: 320px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-header__img {
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-bottom: 21px;
+  display: block;
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 0;
+  right: 21px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.main-header--menu-closed {
+  .main-header__toggle::before {
+    position: absolute;
+    content: "";
+    top: 21px;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background-color: @white;
+    box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
+  }
+
+  .main-header__nav {
+    display: none;
+  }
+
+  .main-header__slogan-wrapper {
+    background-image: none;
+    min-height: 390px;
+  }
+
+  .main-header__wrapper {
+    background-image: url("../img/back-mobile.png");
+  }
+}
+
+.main-header__toggle:hover::before {
+  background-color: @pinkyred;
+  box-shadow: 0 8px 0 0 @pinkyred, 0 16px 0 0 @pinkyred;
+}
+
+.main-header--menu-opened .main-header__toggle {
+  top: 10px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 23px;
+    height: 2px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @pinkyred;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@pinkyred, 30%);
+  }
+}
+
+.main-header--menu-opened .main-header__logo-wrapper {
+  background: @togglemenublue;
+  border-bottom: 1px solid @black;
+}
