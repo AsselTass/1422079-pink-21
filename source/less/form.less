@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__section-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  border: none;
+  padding: 15px 22px;
+}
+
+.form__section--gray {
+  background-color: @lightgrey;
+}
+
+.form__row {
+  padding: 0 22px 29px;
+  margin: 0 auto;
+}
+
+.form__section-title,
+.form__textfield-label {
+  padding: 42px 51px 26px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: @pinkyred;
+  text-transform: uppercase;
+}
+
+.form__textfield-label {
+  line-height: 30px;
+  padding: 0 0 17px 43px;
+  text-align: left;
+}
+
+.form__checklist,
+.form__radiolist {
+  .margin-unset();
+  list-style: none;
+  padding-left: 0;
+}
+
+.form__textfield,
+.form__commentfield {
+  box-sizing: border-box;
+  border: 2px solid @grey;
+  border-radius: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding: 23px 0 23px 14px;
+  width: 276px;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  &::placeholder {
+    color: @togglemenublue;
+    opacity: 1;
+  }
+}
+
+.form__commentfield {
+  padding: 22px 20px 94px;
+}
+
+.form__checkbox-label,
+.form__radio-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__checkbox-item + .form__checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: -52px;
+  width: 35px;
+  height: 35px;
+  background: @white;
+  border: 2px solid @lightgrey;
+  border-radius: 1px;
+}
+
+.form__checkbox-item:checked + .form__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -42px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  color: @pinkyred;
+}
+
+.form__radio-item + .form__radio-text::before {
+  content: "";
+  position: absolute;
+  left: -52px;
+  width: 37px;
+  height: 37px;
+  background: @white;
+  border: 2px solid @lightgrey;
+  border-radius: 50%;
+}
+
+.form__radio-item:checked + .form__radio-text::after {
+  content: "";
+  position: absolute;
+  left: -39px;
+  width: 15px;
+  height: 15px;
+  top: 12px;
+  background-color: @pinkyred;
+  border-radius: 50%;
+}
+
+.form__request-button {
+  padding: 23px 45px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: @white;
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  margin-top: 8px;
+  margin-bottom: 17px;
+}
