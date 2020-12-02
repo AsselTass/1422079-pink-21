@@ -54,7 +54,7 @@
         <div class="page-inner__content">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__section">
-              <fieldset class="form__section-wrapper">
+              <fieldset class="form__section-wrapper form__row-wrapper">
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-surname">Фамилия:</label>
                   <input class="form__textfield" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -101,7 +101,7 @@
               </fieldset>
             </div>
             <div class="form__section">
-              <fieldset class="form__section-wrapper">
+              <fieldset class="form__section-wrapper form__row-wrapper">
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-phone">номер телефона</label>
                   <input class="form__textfield" id="user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
@@ -139,11 +139,13 @@
                 </div>
               </fieldset>
             </div>
-            <div class="form__row">
-              <button class="form__request-button" type="submit" aria-label="Кнопка отправить">Отправить форму</button>
-            </div>
-            <div class="form__row">
-              <span>-Обязательные поля</span>
+            <div class="form__section">
+              <div class="form__section-wrapper">
+                <div class="form__send-request">
+                  <button class="form__request-button" type="submit" aria-label="Кнопка отправить">Отправить форму</button>
+                  <span class="form_remark"><span class="form_remark-star">*</span> &#8212; Обязательные поля</span>
+                </div>
+              </div>
             </div>
           </form>
         </div>

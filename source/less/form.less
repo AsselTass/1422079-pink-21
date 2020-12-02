@@ -4,10 +4,14 @@
 }
 
 .form__section-wrapper {
-  max-width: 320px;
   margin: 0 auto;
   border: none;
   padding: 15px 22px;
+  max-width: 276px;
+}
+
+.form__row-wrapper {
+  padding-top: 42px;
 }
 
 .form__section--gray {
@@ -15,13 +19,14 @@
 }
 
 .form__row {
-  padding: 0 22px 29px;
+  /*padding: 0 22px 29px;*/
+  padding-bottom: 29px;
   margin: 0 auto;
 }
 
 .form__section-title,
 .form__textfield-label {
-  padding: 42px 51px 26px;
+  padding: 42px 20px 26px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +38,7 @@
 
 .form__textfield-label {
   line-height: 30px;
-  padding: 0 0 17px 43px;
+  padding: 0 0 17px 22px;
   text-align: left;
   display: inline-block;
 }
@@ -42,7 +47,7 @@
 .form__radiolist {
   .margin-unset();
   list-style: none;
-  padding: 0 20px;
+  padding-left: 0;
 }
 
 .form__textfield,
@@ -79,7 +84,11 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  padding: 5px 0 5px 68px;
+  padding: 5px 0 5px 57px;
+}
+
+.form__radio-text {
+  padding-left: 68px;
 }
 
 .form__checkbox-label::before {
@@ -128,9 +137,14 @@
   border-radius: 50%;
 }
 
+.form__send-request {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__request-button {
   font: inherit;
-  padding: 13px 45px 12px;
+  padding: 13px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -141,4 +155,20 @@
   margin-top: 8px;
   margin-bottom: 17px;
   text-transform: uppercase;
+  min-width: 276px;
+}
+
+.form_remark {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 29px;
+  padding-bottom: 11px;
+
+  &.form_remark-star {
+    color: @pinkyred;
+    text-align: center;
+  }
 }
