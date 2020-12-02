@@ -13,13 +13,14 @@
 
 .main-header__logo {
   background: @lightblack;
+  margin: 0 auto;
 }
 
 .main-header__logo-wrapper {
-  max-width: 320px;
   display: flex;
   margin: 0 auto;
   position: relative;
+  max-width: 320px;
 }
 
 .main-header__img {
@@ -60,7 +61,7 @@
 
   .main-header__slogan-wrapper {
     background-image: none;
-    min-height: 390px;
+    /*min-height: 390px;*/
   }
 
   .main-header__wrapper {
@@ -107,7 +108,7 @@
   }
 }
 
-.main-header--menu-opened .main-header__logo-wrapper {
+.main-header--menu-opened .main-header__logo {
   background: @togglemenublue;
   border-bottom: 1px solid @black;
 }
