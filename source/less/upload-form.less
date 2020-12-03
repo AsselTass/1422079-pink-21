@@ -1,0 +1,80 @@
+.upload-form__button {
+  background-color: transparent;
+  border-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+
+  .image {
+    height: 44px;
+    width: 44px;
+  }
+}
+
+.upload-form__filter-controls {
+  .margin-unset();
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 43px 0 34px;
+  position: relative;
+}
+
+.upload-form__buttons {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-form__button--post,
+.upload-form__button--cancel {
+  padding: 15px;
+  border: 3px solid @pinkyred;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: @pinkyred;
+}
+
+.upload-form__button--cancel {
+  color: fade(@togglemenublue, 10%);
+  border: 3px solid fade(@togglemenublue, 10%);
+}
+
+.upload-form__image {
+  position: relative;
+  padding-top: 133.6%;
+}
+
+.upload-form__file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.upload-form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/photo-7-tablet.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.upload-form___bottom-border {
+  position: absolute;
+  width: 320px;
+  border: 1px solid fade(@togglemenublue, 10%);
+  bottom: 37px;
+}
