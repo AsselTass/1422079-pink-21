@@ -15,14 +15,27 @@
   border: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 43px 0 34px;
   position: relative;
 }
 
 .upload-form__buttons {
-  max-width: 280px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding: 38px 0 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: -20px;
+    background-image: url("../img/div.svg");
+  }
 }
 
 .upload-form__button--post,
@@ -72,9 +85,14 @@
   cursor: pointer;
 }
 
-.upload-form___bottom-border {
-  position: absolute;
-  width: 320px;
-  border: 1px solid fade(@togglemenublue, 10%);
-  bottom: 37px;
+.upload-form__range {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.upload-form__filter-control--activ {
+  .upload-form__range {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
