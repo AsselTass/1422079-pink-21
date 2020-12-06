@@ -3,36 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header main-header--menu-closed">
       <div class="main-header__wrapper">
-        <nav class="site-nav">
-          <div class="site-nav__wrapper">
-            <a class="site-nav__logo">
-              <img alt="Логотип" src="https://via.placeholder.com/150x150">
+        <div class="main-header__logo">
+          <div class="main-header__logo-wrapper">
+            <a class="main-header__img">
+              <img alt="Логотип" src="img/pink.svg">
             </a>
-            <ul class="site-nav__list">
-              <li class="site-nav__item">
-                <a href="index.html">ГЛАВНАЯ</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="photo.html">ФОТОГРАФИИ</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="form.html">КОНКУРС</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-              </li>
-            </ul>
-            <button class="site-nav__toggle" type="button"><img class="site-nav__icon" src="https://via.placeholder.com/150x150" alt="menu-toggle"><span class="visually-hidden"></span>
-            </button>
+            <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+        </div>
+        <nav class="main-header__nav site-nav">
+          <div class="site-nav__wrapper">
+            <div class="site-nav__content-wrapper">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
-        <section class="header-slogan">
-          <div class="header-slogan__wrapper">
+        <section class="main-header__slogan header-slogan header-slogan__inner-page">
+          <div class="main-header__slogan-wrapper header-slogan__wrapper">
             <h2 class="header-slogan__text">Фотографии пользователей</h2>
         </div>
         </section>
@@ -46,85 +52,87 @@
           </p>
         </div>
         <div class="page-inner__content">
-          <div class="page-inner__content-wrapper">
-            <ul class="gallery">
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo gallery-post__photo--panorama" href=""><img src="https://via.placeholder.com/150x150"></a>
-                <div class="gallery-post__comment">
+          <div class="gallery">
+            <div class="gallery__wrapper gallery__wrapper--panorama">
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo gallery-post__photo--panorama" href=""><img src="img/panorama-tablet.png"></a>
+                <div class="gallery-post__comment gallery-post__comment--panorama">
                   <b class="gallery-post__user-name">Анна</b>
                   <span class="gallery-post__user-time">(5 МИНУТ НАЗАД)</span>
                   <p class="gallery-post__user-text">Прыгать или нет?Напишите в коментарии свой совет и смотрите прямую трансляциюв перископе, задавайте свои вопросы!</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 215</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+            </div>
+            <div class="gallery__wrapper">
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-1-mobile.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Левон</b>
                   <span class="gallery-post__user-time">(5 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-                  <a href="#"  class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#"  class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 356</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-2-mobile.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Антон</b>
                   <span class="gallery-post__user-time">(12 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Соседи будут рады!</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 666</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-3-tablet.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Борис</b>
                   <span class="gallery-post__user-time">(20 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Здесь могла бы быть ваша цитата о высоком и вечном.</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 215</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-4-tablet.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Сергей</b>
                   <span class="gallery-post__user-time">(12 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Самая кубанская в мире!</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 4</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-5-tablet.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Максим</b>
                   <span class="gallery-post__user-time">(40 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Где снег-то?</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 150</span>
                 </div>
-              </li>
-              <li class="gallery__item gallery-post">
-                <a class="gallery-post__photo" href=""><img src="https://via.placeholder.com/150x150"></a>
+              </div>
+              <div class="gallery__item gallery-post">
+                <a class="gallery-post__photo" href=""><img src="img/photo-6-tablet.png"></a>
                 <div class="gallery-post__comment">
                   <b class="gallery-post__user-name">Надежда</b>
                   <span class="gallery-post__user-time">(45 ЧАСОВ НАЗАД)</span>
                   <p class="gallery-post__user-text">Всем GM и взаимные лайки!</p>
-                  <a href="#" class="gallery-post__heart"><img src="https://via.placeholder.com/150x150"></a>
+                  <a href="#" class="gallery-post__heart"><img src="img/heart.svg"></a>
                   <span class="gallery-post__like">НРАВИТСЯ: 2560</span>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <section class="filtering-slogan">
         <div class="filtering-slogan__wrapper">
-          <p class="filtering-slogan__text"> Затмите их всех!
+          <p class="filtering-slogan__text"> Затмите их всех!<br>
         Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
@@ -137,19 +145,17 @@
               <label for="file-field" class="upload-form__label"></label>
             </div>
             <fieldset class="upload-form__filter-controls">
-              <legend class="visually hidden">photo filter</legend>
-              <div class="upload-form__filter-control">
-                <button type="button" class="upload-form__button upload-form__button--crop"></button>
-                <div class="upload-form__range control-filter">
-                  <div class="control-filter__bar">
-                    <div class="control-filter__scale"></div>
-                  </div>
+              <legend class="visually-hidden">photo filter</legend>
+              <div class="upload-form__filter-control  upload-form__filter-control--activ">
+                <button type="button" class="upload-form__button upload-form__button--crop"><img src="img/crop.svg"></button>
+                <div class="upload-form__range control-filter control-filter--crop">
+                  <div class="control-filter__bar"></div>
                 <div class="control-filter__toggle"></div>
                 </div>
               </div>
               <div class="upload-form__filter-control">
-                <button type="button" class="upload-form__button upload-form__button--fill"></button>
-                <div class="upload-form__range control-filter">
+                <button type="button" class="upload-form__button upload-form__button--fill"><img src="img/fill.svg"></button>
+                <div class=" upload-form__range control-filter control-filter--fill">
                   <div class="control-filter__bar">
                     <div class="control-filter__scale"></div>
                   </div>
@@ -157,8 +163,8 @@
                 </div>
               </div>
               <div class="upload-form__filter-control">
-                <button type="button" class="upload-form__button upload-form__button--brightness"></button>
-                <div class="upload-form__range control-filter">
+                <button type="button" class="upload-form__button upload-form__button--brightness"><img src="img/contrast.svg"></button>
+                <div class="upload-form__range control-filter control-filter--brightness">
                   <div class="control-filter__bar">
                     <div class="control-filter__scale"></div>
                   </div>
@@ -167,8 +173,8 @@
               </div>
             </fieldset>
             <div class="upload-form__buttons">
-              <input class="upload-form__button upload-form__button--post" type="submit" value="Submit">
-              <input class="upload-form__button upload-form__button--cancel" type="reset">
+              <input class="upload-form__button upload-form__button--post" type="submit" value="Запостить">
+              <input class="upload-form__button upload-form__button--cancel" type="reset" value="Отмена">
             </div>
           </form>
         </div>
@@ -176,25 +182,37 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a><img alt="Логотип" src="https://via.placeholder.com/150x150"></a>
+        <a><img alt="Логотип" src="img/logotype-blue-tablet.svg"></a>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li>
               <a class="social-list__item social-list__item--twitter-icon" href="#" aria-label="Твиттер">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                </svg>
               </a>
             </li>
             <li>
               <a class="social-list__item social-list__item--facebook-icon" href="#" aria-label="Фейсбук">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
+                </svg>
               </a>
             </li>
             <li>
               <a class="social-list__item social-list__item--youtube-icon" href="#" aria-label="Ютуб">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
+                </svg>
               </a>
             </li>
           </ul>
           <div class="footer-copyright">
-            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="https://via.placeholder.com/150x150"></a></p>
+            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="img/html-academy.svg"></a></p>
           </div>
         </section>
       </div>
