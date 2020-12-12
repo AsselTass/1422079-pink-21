@@ -1,10 +1,35 @@
 .applications {
   background-color: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    top: 249px;
+    left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+    position: absolute;
+    top: 339px;
+    left: 10px;
+  }
 }
 
 .applications__links {
   padding-top: 38px;
   padding-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 58px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 58px;
+  }
 }
 
 .applications__wrapper {
@@ -28,7 +53,12 @@
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 38px;
+  padding: 16px 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 
 .applications__text {
@@ -40,4 +70,11 @@
   text-align: center;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

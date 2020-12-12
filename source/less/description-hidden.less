@@ -1,0 +1,58 @@
+.description-hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.description-hidden__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 97px 30px 50px 330px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 97px 166px 120px 500px;
+    position: relative;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../img/tablet-roundtimer.png");
+      height: 276px;
+      width: 238px;
+      left: 20px;
+      top: 53px;
+    }
+
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      background-image: url("../img/desktop-roundtimer.png");
+      height: 345px;
+      width: 298px;
+      left: 130px;
+      top: 53px;
+    }
+  }
+}
+
+.contacts__item--second-row {
+  @media (min-width: @tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}

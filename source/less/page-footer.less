@@ -5,4 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
 }

@@ -9,18 +9,24 @@
   align-items: center;
   max-width: 320px;
   margin: 0 auto;
-}
 
-.reviews__author {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: center;
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 688px;
+  }
 }
 
 .reviews__item {
   text-align: center;
   padding-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__text {
@@ -30,4 +36,20 @@
   line-height: 30px;
   text-align: center;
   padding-top: 31px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding-bottom: 51px;
+  }
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }

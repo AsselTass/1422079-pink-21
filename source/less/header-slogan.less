@@ -5,15 +5,47 @@
   line-height: 29px;
   text-align: center;
   margin-bottom: 345px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    max-width: 240px;
+    padding: 85px 26px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    position: relative;
+  }
+}
+
+.main-header--menu-closed .header-slogan__text {
+  margin-bottom: 273px;
 }
 
 .header-slogan__wrapper {
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/mainheader-bgmobile.png");
   margin: 0 auto;
   max-width: 320px;
   /*min-height: 461px;*/
   box-sizing: border-box;
   padding: 29px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/mainheader-bgtablet.png");
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .header-slogan__inner-page .header-slogan__text {

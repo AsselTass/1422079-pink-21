@@ -9,6 +9,11 @@
   margin: 0 auto;
   position: relative;
   background: @togglemenublue;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    background: transparent;
+  }
 }
 
 .site-nav__list {
@@ -18,6 +23,10 @@
   margin-top: 0;
   text-align: center;
   left: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .site-nav__link {
@@ -32,4 +41,13 @@
   text-transform: uppercase;
   border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 0 78px 0 0;
+  }
 }
