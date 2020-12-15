@@ -12,26 +12,50 @@
   max-width: 320px;
 
   @media (min-width: @tablet-width) {
-    max-width: 350px;
+    max-width: @tablet-width;
     justify-content: end;
     text-align: left;
     margin: 0;
-    margin-left: auto;
+    align-items: end;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     max-width: 876px;
     margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  &::after {
+    background-image: url("../img/mobile-smile-phone.png");
+    position: absolute;
+    height: 282px;
+    width: 157px;
+    content: "";
+    left: 70px;
+    bottom: 0;
+    margin-top: 5px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/tablet-smile-phone.png");
+      height: 484px;
+      width: 268px;
+      left: 20px;
+      bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: none;
+      height: 0;
+      width: 0;
+    }
   }
 }
 
 .description__list {
   .margin-unset();
   list-style: none;
-  padding-left: 0;
-  padding-bottom: 287px;
-  padding-top: 124px;
+  padding: 124px 20px 287px;
 
   @media (min-width: @tablet-width) {
     padding-top: 75px;
@@ -46,37 +70,19 @@
     grid-template-columns: 235px 235px 235px;
     column-gap: 87px;
   }
-
-  &::after {
-    background-image: url("../img/mobile-smile-phone.png");
-    position: absolute;
-    height: 282px;
-    width: 157px;
-    content: "";
-    left: 70px;
-    margin-top: 5px;
-
-    @media (min-width: @tablet-width) {
-      background-image: url("../img/tablet-smile-phone.png");
-      height: 484px;
-      width: 268px;
-      left: 20px;
-      top: 20px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: none;
-      height: 0;
-      width: 0;
-    }
-  }
 }
 
 .description__item {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 235px;
+  width: 267px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 237px;
+  }
 }
 
 .description__item--grey {

@@ -3,17 +3,13 @@
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
-    position: absolute;
-    content: "";
-    top: 249px;
-    left: 20px;
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: transparent;
-    position: absolute;
-    top: 339px;
-    left: 10px;
   }
 }
 
@@ -21,7 +17,7 @@
   padding-top: 38px;
   padding-bottom: 28px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding-top: 58px;
     padding-bottom: 48px;
   }
@@ -41,6 +37,11 @@
   background-position: center;
   margin: 0 auto;
   max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
 }
 
 .applications__button {

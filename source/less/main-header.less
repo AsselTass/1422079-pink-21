@@ -27,7 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-size: 1200px auto;
+    background-size: cover;
   }
 }
 
@@ -84,11 +84,12 @@
     display: inline-block;
     padding-bottom: 48px;
     padding-top: 48px;
-    padding-left: 173px;
+    padding-left: 48px;
+    margin-left: 125px;
   }
 }
 
-.main-header__logonav {
+.main-header__container {
   background: @lightblack;
 
   @media (min-width: @desktop-width) {
@@ -97,7 +98,7 @@
   }
 }
 
-.main-header__logonav-wrapper {
+.main-header__container-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: center;
@@ -130,15 +131,6 @@
     }
   }
 
-  .main-header__slogan-wrapper {
-    background-image: none;
-    /*min-height: 390px;*/
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-  }
-
   .main-header__wrapper {
     background-image: url("../img/mainheader-bgmobile.png");
 
@@ -151,6 +143,19 @@
       background-image: url("../img/mainheader-bgdesktop.png");
       max-width: @desktop-width;
       margin: 0 auto;
+    }
+  }
+
+  .main-header__content-wrapper {
+    background: none;
+    padding: 29px 20px;
+  }
+
+  .main-header__slogan-wrapper {
+    min-height: 390px;
+
+    @media (min-width: @tablet-width) {
+      min-height: 0;
     }
   }
 }
@@ -211,20 +216,30 @@
   .main-header__wrapper {
     @media (min-width: @desktop-width) {
       background-image: url("../img/mainheader-bgdesktop.png");
-      max-width: @desktop-width;
       margin: 0 auto;
     }
   }
 }
 
 .main-header__content-wrapper {
+  background-image: url("../img/mainheader-bgmobile.png");
+  margin: 0 auto;
+  max-width: 320px;
+  /*min-height: 461px;*/
+  box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
+    background-image: url("../img/mainheader-bgtablet.png");
     position: relative;
     max-width: 660px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 29px 20px 72px;
   }
 
   @media (min-width: @desktop-width) {
+    background-image: none;
     max-width: 960px;
     margin: 0 auto;
   }

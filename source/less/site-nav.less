@@ -1,21 +1,3 @@
-.site-nav__wrapper {
-  background: @lightblack;
-}
-
-.site-nav__content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  background: @togglemenublue;
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    background: transparent;
-  }
-}
-
 .site-nav__list {
   list-style: none;
   padding-left: 0;
@@ -23,9 +5,12 @@
   margin-top: 0;
   text-align: center;
   left: 0;
+  background: @togglemenublue;
+  position: relative;
 
   @media (min-width: @desktop-width) {
     display: flex;
+    background: transparent;
   }
 }
 
