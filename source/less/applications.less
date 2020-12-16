@@ -1,10 +1,31 @@
 .applications {
   background-color: @darkblue;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .applications__links {
   padding-top: 38px;
   padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 58px;
+  }
 }
 
 .applications__wrapper {
@@ -16,6 +37,11 @@
   background-position: center;
   margin: 0 auto;
   max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
 }
 
 .applications__button {
@@ -28,7 +54,12 @@
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 38px;
+  padding: 16px 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 
 .applications__text {
@@ -40,4 +71,11 @@
   text-align: center;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -1,16 +1,3 @@
-.site-nav__wrapper {
-  background: @lightblack;
-}
-
-.site-nav__content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-  background: @togglemenublue;
-}
-
 .site-nav__list {
   list-style: none;
   padding-left: 0;
@@ -18,6 +5,13 @@
   margin-top: 0;
   text-align: center;
   left: 0;
+  background: @togglemenublue;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    background: transparent;
+  }
 }
 
 .site-nav__link {
@@ -32,4 +26,13 @@
   text-transform: uppercase;
   border-top: 1px solid fade(@white, 15%);
   border-bottom: 1px solid @black;
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 0 78px 0 0;
+  }
 }
