@@ -9,7 +9,6 @@
 
 .description-hidden__wrapper {
   @media (min-width: @tablet-width) {
-    max-width: @tablet-width;
     margin: 0 auto;
     padding: 97px 30px 50px 330px;
     position: relative;
@@ -18,8 +17,9 @@
   @media (min-width: @desktop-width) {
     max-width: @desktop-width;
     margin: 0 auto;
-    padding: 97px 50px 120px 500px;
+    padding: 97px 50px 120px 490px;
     position: relative;
+    box-sizing: border-box;
   }
 
   &::before {
