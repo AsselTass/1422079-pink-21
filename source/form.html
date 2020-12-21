@@ -9,17 +9,17 @@
   <body>
     <header class="main-header main-header--menu-closed">
       <div class="main-header__wrapper">
-        <div class="main-header__logo">
-          <div class="main-header__logo-wrapper">
-            <a class="main-header__img">
-              <img alt="Логотип" src="img/pink.svg">
-            </a>
-            <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
-        </div>
-        <nav class="main-header__nav site-nav">
-          <div class="site-nav__wrapper">
-            <div class="site-nav__content-wrapper">
+        <div class="main-header__container">
+          <div class="main-header__container-wrapper">
+            <div class="main-header__logo">
+              <div class="main-header__logo-wrapper">
+                <a class="main-header__img">
+                  <img alt="Логотип" src="img/pink.svg">
+                </a>
+                <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+              </div>
+            </div>
+            <nav class="main-header__nav site-nav">
               <ul class="site-nav__list">
                 <li class="site-nav__item">
                   <a class="site-nav__link" href="index.html">Главная</a>
@@ -34,13 +34,13 @@
                   <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
-        </nav>
+        </div>
         <section class="main-header__slogan header-slogan  header-slogan__inner-page">
           <div class="main-header__slogan-wrapper header-slogan__wrapper">
             <h2 class="header-slogan__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
-        </div>
+          </div>
         </section>
       </div>
     </header>
@@ -49,12 +49,13 @@
         <div class="page-inner__header">
           <p class="page-inner__text">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="page-inner__text page-inner__text--mobile">Пожалуйста, заполните форму ниже:</span>
           </p>
         </div>
         <div class="page-inner__content">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__section">
-              <fieldset class="form__section-wrapper form__row-wrapper">
+            <div class="form__section form__section--name">
+              <fieldset class="form__section-wrapper form__section-wrapper--noborder form__row-wrapper">
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-surname">Фамилия:</label>
                   <input class="form__textfield" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -69,8 +70,8 @@
                 </div>
               </fieldset>
             </div>
-            <div class="form__section form__section--gray">
-              <fieldset class="form__section-wrapper">
+            <div class="form__section form__section--gray form__section--checkbox">
+              <fieldset class="form__section-wrapper form__section-wrapper--checkbox">
                 <legend class="form__section-title">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form__checklist checklist">
                   <li class="checklist__item">
@@ -100,19 +101,20 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="form__section">
-              <fieldset class="form__section-wrapper form__row-wrapper">
+            <div class="form__section form__section--contact">
+              <fieldset class="form__section-wrapper form__section-wrapper--contact form__row-wrapper">
+                <legend class="form__section-title">контактная информация</legend>
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-phone">номер телефона</label>
-                  <input class="form__textfield" id="user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
+                  <input class="form__textfield form__textfield--phone" id="user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
                 </div>
                 <div class="form__row">
                   <label class="form__textfield-label" for="user-email">адрес почты</label>
-                  <input class="form__textfield" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
+                  <input class="form__textfield form__textfield--email" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
                 </div>
               </fieldset>
             </div>
-            <div class="form__section form__section--gray">
+            <div class="form__section form__section--gray form__section--radio">
               <fieldset class="form__section-wrapper">
                 <legend class="form__section-title">С каким приложением путешествовали?</legend>
                 <ul class="form__radiolist radiolist">
@@ -131,16 +133,17 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="form__section">
-              <fieldset class="form__section-wrapper">
+            <div class="form__section form__section--text">
+              <fieldset class="form__section-wrapper form__section-wrapper--comment">
+                <legend class="form__section-title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
                 <div class="form__row comment-field">
-                  <label class="form__textfield-label" for="form-comment">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+                  <!--<label class="form__textfield-label" for="form-comment">ОПИШИТЕ СВОИ ЭМОЦИИ</label> -->
                   <textarea class="form__commentfield" id="form-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </div>
               </fieldset>
             </div>
-            <div class="form__section">
-              <div class="form__section-wrapper">
+            <div class="form__section form__section--button">
+              <div class="form__section-wrapper form__section-wrapper--noborder">
                 <div class="form__send-request">
                   <button class="form__request-button" type="submit" aria-label="Кнопка отправить">Отправить форму</button>
                   <span class="form_remark"><span class="form_remark-star">*</span> &#8212; Обязательные поля</span>
