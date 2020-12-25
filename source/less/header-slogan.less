@@ -24,6 +24,17 @@
   }
 }
 
+.header-slogan__text--form {
+  @media (min-width: @tablet-width) {
+    max-width: 470px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 750px;
+  }
+}
+
 .header-slogan__wrapper {
   margin: 0 auto;
   max-width: 320px;
@@ -35,6 +46,7 @@
     margin: 0;
     min-height: 0;
     padding-top: 0;
+    max-width: @tablet-width;
   }
 
   @media (min-width: @desktop-width) {

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header main-header--menu-closed">
-      <div class="main-header__wrapper">
+      <div class="main-header__wrapper main-header__wrapper--form">
         <div class="main-header__container">
           <div class="main-header__container-wrapper">
             <div class="main-header__logo">
@@ -38,8 +38,8 @@
           </div>
         </div>
         <section class="main-header__slogan header-slogan  header-slogan__inner-page">
-          <div class="main-header__slogan-wrapper header-slogan__wrapper">
-            <h2 class="header-slogan__text">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <div class="main-header__slogan-wrapper main-header-slogan__wrapper--form header-slogan__wrapper">
+            <h2 class="header-slogan__text header-slogan__text--form">Конкурс на самое безбашенное путешествие с Пинк</h2>
           </div>
         </section>
       </div>
@@ -102,15 +102,17 @@
               </fieldset>
             </div>
             <div class="form__section form__section--contact">
-              <fieldset class="form__section-wrapper form__section-wrapper--contact form__row-wrapper">
+              <fieldset class="form__section-wrapper form__row-wrapper">
                 <legend class="form__section-title">контактная информация</legend>
-                <div class="form__row">
-                  <label class="form__textfield-label" for="user-phone">номер телефона</label>
-                  <input class="form__textfield form__textfield--phone" id="user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
-                </div>
-                <div class="form__row">
-                  <label class="form__textfield-label" for="user-email">адрес почты</label>
-                  <input class="form__textfield form__textfield--email" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
+                <div class="form__contact-wrapper">
+                  <div class="form__row form__row--contact">
+                    <label class="form__textfield-label form__textfield-label--phone" for="user-phone">номер телефона</label>
+                    <input class="form__textfield form__textfield--phone" id="user-phone" type="tel" name="tel-number" placeholder="Номер, пожалуйста">
+                  </div>
+                  <div class="form__row form__row--contact">
+                    <label class="form__textfield-label form__textfield-label--email" for="user-email">адрес почты</label>
+                    <input class="form__textfield form__textfield--email" id="user-email" type="email" name="email" placeholder="Введите почту *" required>
+                  </div>
                 </div>
               </fieldset>
             </div>
@@ -157,38 +159,36 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a><img alt="Логотип" src="img/logotype-blue-tablet.svg"></a>
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social-list">
-            <li>
-              <a class="social-list__item social-list__item--twitter-icon" href="#" aria-label="Твиттер">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
-                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-list__item social-list__item--facebook-icon" href="#" aria-label="Фейсбук">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
-                  <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-list__item social-list__item--youtube-icon" href="#" aria-label="Ютуб">
-                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
-                  <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="footer-copyright">
-            <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="img/html-academy.svg"></a></p>
-          </div>
-        </section>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social-list">
+          <li>
+            <a class="social-list__item social-list__item--twitter-icon" href="#" aria-label="Твиттер">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-list__item social-list__item--facebook-icon" href="#" aria-label="Фейсбук">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-list__item social-list__item--youtube-icon" href="#" aria-label="Ютуб">
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p>Разработано <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="Логотип" src="img/html-academy.svg"></a></p>
+        </div>
       </div>
     </footer>
   </body>
