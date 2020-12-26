@@ -2,6 +2,10 @@
   max-width: 320px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
 }
 
 .page-inner__text {
@@ -11,4 +15,17 @@
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+}
+
+.page-inner__text--mobile {
+  display: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
