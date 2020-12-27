@@ -1,6 +1,10 @@
 .control-filter {
   padding: 39px 20px 34px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 20px;
+  }
 }
 
 .control-filter__bar {
@@ -9,6 +13,14 @@
   background: @togglemenublue;
   position: absolute;
   left: 20px;
+
+  @media (min-width: @tablet-width) {
+    left: 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 92px;
+  }
 }
 
 
@@ -24,4 +36,24 @@
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 44px;
+  }
+}
+
+.control-filter__toggle--fill {
+  @media (min-width: @tablet-width) {
+    top: 92px;
+  }
+}
+
+.control-filter__toggle--brightness {
+  @media (min-width: @tablet-width) {
+    top: 138px;
+  }
 }

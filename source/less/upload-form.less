@@ -1,3 +1,17 @@
+.upload-form__controllers {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    height: 454px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 380px;
+  }
+}
+
 .upload-form__button {
   background-color: transparent;
   border-color: transparent;
@@ -18,6 +32,18 @@
   align-items: center;
   padding: 43px 0 34px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 193px;
+    padding-top: 0;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 374px;
+  }
 }
 
 .upload-form__buttons {
@@ -36,6 +62,10 @@
     left: -20px;
     background-image: url("../img/div.svg");
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .upload-form__button--post,
@@ -51,6 +81,10 @@
   line-height: 18px;
   text-align: center;
   color: @pinkyred;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 79px;
+  }
 }
 
 .upload-form__button--cancel {
@@ -61,6 +95,11 @@
 .upload-form__image {
   position: relative;
   padding-top: 133.6%;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding-top: 0;
+  }
 }
 
 .upload-form__file {
@@ -70,6 +109,10 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+
+  @media (min-width: @tablet-width) {
+    height: 454px;
+  }
 }
 
 .upload-form__label {
@@ -83,6 +126,11 @@
   background-position: top center;
   background-size: cover;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .upload-form__range {
@@ -90,9 +138,24 @@
   pointer-events: none;
 }
 
+.upload-form__filter-control {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
 .upload-form__filter-control--activ {
   .upload-form__range {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+.upload-form__filter-control--hidden {
+  @media (min-width: @tablet-width) {
+    .upload-form__range {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 }

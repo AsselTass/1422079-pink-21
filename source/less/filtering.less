@@ -7,4 +7,13 @@
   border: none;
   padding: 15px 20px;
   max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 620px;
+    padding: 57px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
 }
