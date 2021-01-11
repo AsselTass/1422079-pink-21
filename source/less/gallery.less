@@ -45,21 +45,31 @@
 }
 
 .gallery-post__comment--panorama {
-  max-width: 253px;
+  width: 253px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    max-width: 620px;
+    width: 560px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 940px;
+    width: 940px;
   }
 }
 
 .gallery__item {
   padding-bottom: 20px;
-  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
+.gallery-post__photo {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .gallery-post__comment {
@@ -69,7 +79,11 @@
   text-align: left;
   background-color: @lightgrey;
   padding: 25px 10px 25px 17px;
-  margin-top: -8px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
   .gallery-post__user-name {
     font-weight: 700;
