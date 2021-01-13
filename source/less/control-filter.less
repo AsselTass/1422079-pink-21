@@ -1,34 +1,41 @@
 .control-filter {
-  padding: 39px 20px 34px;
-  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px 20px 32px;
+  opacity: 0;
+  pointer-events: none;
 
   @media (min-width: @tablet-width) {
     padding: 22px 20px;
     width: 202px;
+    left: 74px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 280px;
   }
 }
 
 .control-filter__bar {
-  width: 240px;
+  position: relative;
+  width: 100%;
   height: 2px;
-  background: @togglemenublue;
-  position: absolute;
-  left: 20px;
+  background-color: @togglemenublue;
 
   @media (min-width: @tablet-width) {
-    left: 74px;
     width: 202px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 92px;
+    width: 280px;
   }
 }
 
 
 .control-filter__toggle {
   position: absolute;
-  top: 127px;
+  top: 5px;
   left: 213px;
   width: 14px;
   height: 14px;
@@ -40,22 +47,6 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    top: 44px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 44px;
-  }
-}
-
-.control-filter__toggle--fill {
-  @media (min-width: @tablet-width) {
-    top: 92px;
-  }
-}
-
-.control-filter__toggle--brightness {
-  @media (min-width: @tablet-width) {
-    top: 138px;
+    top: 17px;
   }
 }
