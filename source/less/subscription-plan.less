@@ -1,19 +1,201 @@
+.subscription-plan {
+  background: url("../img/grey-subscription.png");
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/grey-background-tablet.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/grey-background-desktop.png");
+  }
+}
+
 .subscription-plan__wrapper {
   display: flex;
   justify-content: center;
   overflow: hidden;
+  padding-top: 117px;
 }
 
 .subscription-plan__item {
   min-width: 276px;
+  height: 97px;
+  background-color: @togglemenublue;
+  color: @white;
+  border: 2px solid @grey;
+
+  @media (min-width: @tablet-width) {
+    min-width: 156px;
+    height: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 233px;
+    height: 94px;
+  }
 }
+
+.subscription-plan__price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+  }
+}
+
+.subscription-plan__item--hit {
+  position: relative;
+}
+
+.subscription-plan__item--hit::before {
+  position: absolute;
+  background: url("../img/subscription-hit.png");
+  content: "";
+  top: 0;
+  left: 0;
+  height: 73px;
+  width: 73px;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/hit_tablet.svg");
+    height: 61px;
+    width: 61px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/subscription-hit.png");
+    height: 74px;
+    width: 74px;
+  }
+}
+
 
 .subscription-plan__table {
   margin: 0 auto;
   border-collapse: collapse;
 }
 
-.subscription-plan__item,
 .subscription-plan__property {
   border: 2px solid @grey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 156px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 59px;
+  }
+}
+
+.subscription-plan__property--included,
+.subscription-plan__property--non-included {
+  position: relative;
+}
+
+.subscription-plan__property--included::after {
+  position: absolute;
+  background: url("../img/yes.svg");
+  content: "";
+  top: 19px;
+  right: 18px;
+  height: 21px;
+  width: 31px;
+
+  @media (min-width: @tablet-width) {
+    right: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 106px;
+  }
+}
+
+.subscription-plan__property--non-included::after {
+  position: absolute;
+  background: url("../img/no.svg");
+  content: "";
+  top: 19px;
+  right: 18px;
+  height: 27px;
+  width: 27px;
+
+  @media (min-width: @tablet-width) {
+    right: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 106px;
+  }
+}
+
+.subscription-plan__table .subscription-plan__property {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.subscription-plan__table .subscription-plan__item {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.subscription-plan__item--invisible {
+  visibility: 0;
+  background: transparent;
+  border: transparent;
+}
+
+.subscription-plan__property--first {
+  visibility: 0;
+  background: transparent;
+  border: transparent;
+  color: transparent;
+
+  @media (min-width: @tablet-width) {
+    color: @togglemenublue;
+    border: 2px solid @grey;
+    padding-left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 22px;
+  }
+}
+
+.subscription-plan__property--first::after {
+  background: none;
+}
+
+.subscription-plan__property--hidden {
+  @media (min-width: @tablet-width) {
+    color: transparent;
+  }
 }

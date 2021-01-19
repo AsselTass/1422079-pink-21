@@ -2,3 +2,41 @@
   display: flex;
   justify-content: center;
 }
+
+.contacts-map__frame {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+    width: 960px;
+  }
+}
+
+.contacts-map {
+  position: relative;
+  padding-top: 62px;
+}
+
+.contacts-map::before {
+  position: absolute;
+  background: url("../img/white-background.png");
+  content: "";
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 123px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}

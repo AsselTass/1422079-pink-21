@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header main-header--menu-opened">
+    <header class="main-header main-header--menu-closed">
       <div class="main-header__wrapper">
         <div class="main-header__container">
           <div class="main-header__container-wrapper">
@@ -117,14 +117,17 @@
             <div class="reviews__item">
               <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="reviews__age">25 лет, водитель трамвая</span>
             </div>
             <div class="reviews__item">
               <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="reviews__age">25 лет, водитель трамвая</span>
             </div>
             <div class="reviews__item">
               <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <span class="reviews__age">25 лет, водитель трамвая</span>
             </div>
           </div>
         </div>
@@ -140,24 +143,28 @@
           <div class="subscription-plan__slider table-slider table-slider--visible-slide-2">
             <table class="subscription-plan__table">
               <tr class="subscription-plan__list">
-                <th class="subscription-plan__item">База</th>
-                <th class="subscription-plan__item">Стандарт</th>
-                <th class="subscription-plan__item">Анлим</th>
+                <th class="subscription-plan__item subscription-plan__item--invisible"></th>
+                <th class="subscription-plan__item">База<h2 class="subscription-plan__price">1.99 USD</h2></th>
+                <th class="subscription-plan__item subscription-plan__item--hit">Стандарт<h2 class="subscription-plan__price">3.99 USD</h2></th>
+                <th class="subscription-plan__item">Анлим<h2 class="subscription-plan__price">9.99 USD</h2></th>
               </tr>
               <tr class="subscription-plan__properties">
-                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
-                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
-                <td class="subscription-plan__property subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--first subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Розовый фильтр</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Розовый фильтр</td>
               </tr>
               <tr class="subscription-plan__properties">
-                <td class="subscription-plan__property subscription-plan__property--non-included">Смайлики</td>
-                <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
-                <td class="subscription-plan__property subscription-plan__property--included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--first subscription-plan__property--non-included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--non-included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Смайлики</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Смайлики</td>
               </tr>
               <tr class="subscription-plan__properties">
-                <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
-                <td class="subscription-plan__property subscription-plan__property--non-included">Комментарии</td>
-                <td class="subscription-plan__property subscription-plan__property--included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--first subscription-plan__property--non-included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--non-included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--non-included">Комментарии</td>
+                <td class="subscription-plan__property subscription-plan__property--hidden subscription-plan__property--included">Комментарии</td>
               </tr>
             </table>
             <div class="table-slider__controls pagination">
@@ -189,7 +196,7 @@
       </section>
       <section class="contacts-map">
         <div class="contacts-map__wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russie%2C%20191186!5e0!3m2!1sfr!2sfr!4v1605550763730!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="contacts-map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russie%2C%20191186!5e0!3m2!1sfr!2sfr!4v1605550763730!5m2!1sfr!2sfr" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
